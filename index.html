@@ -19,632 +19,69 @@
         //Share your github repo link.
 
         // Book Objects
-        // Object 1
-        var book1 = {
-            title: "The Alchemist",
-            author: "Paulo Coelho",
-            year: 1988,
-            genre: "Fiction",
-            pages: 208,
-            rating: 4.2,
-            language: "Portuguese",
-            storyline: "Santiago, a young Andalusian shepherd who embarks on a journey to fulfill a recurring dream of finding treasure at the Egyptian pyramids"
+        function Car(name, brand, model, price) {
+            this.name = name;
+            this.brand = brand;
+            this.model = model;
+            this.price = price;
         }
 
-        // Object 2
-        var book2 = {
-            title: "The Sun Also Rises",
-            author: "Ernest Hemingway",
-            genre: "Modernist Novel",
-            year: 1926,
-            pages: 251,
-            rating: 3.8,
-            language: "English",
-            storyline: "Expat Americans search for meaning and love in post-WWI Europe."
-        }
+        var carDetails = [
+            new Car("Civic", "Honda", "2024", 3500000),
+            new Car("City", "Honda", "Aspire", 3800000),
+            new Car("Accord", "Honda", "Executive", 7200000),
+            new Car("BR-V", "Honda", "Aspire", 4500000),
+            new Car("Vezel", "Honda", "Hybrid", 6500000),
+            new Car("Fit", "Honda", "Hybrid", 2500000),
+            new Car("Corolla", "Toyota", "GLi", 4200000),
+            new Car("Yaris", "Toyota", "ATIV", 3900000),
+            new Car("Camry", "Toyota", "Grande", 8500000),
+            new Car("Fortuner", "Toyota", "2.7L", 12000000),
+            new Car("Prado", "Toyota", "TX", 18000000),
+            new Car("Hiace", "Toyota", "Standard", 4500000),
+            new Car("Aqua", "Toyota", "Hybrid", 3200000),
+            new Car("Vitz", "Toyota", "F Package", 2800000),
+            new Car("Passo", "Toyota", "X", 2600000),
+            new Car("Alto", "Suzuki", "VXR", 2300000),
+            new Car("Cultus", "Suzuki", "VXL", 2800000),
+            new Car("Mehran", "Suzuki", "VXR", 1200000),
+            new Car("Wagon R", "Suzuki", "VXL", 2200000),
+            new Car("Swift", "Suzuki", "DLX", 2800000),
+            new Car("Bolan", "Suzuki", "VX", 1900000),
+            new Car("Every", "Suzuki", "Wagon", 2800000),
+            new Car("Jimny", "Suzuki", "GL", 6800000),
+            new Car("Mira", "Daihatsu", "ES", 1800000),
+            new Car("Move", "Daihatsu", "Custom", 2100000),
+            new Car("Clipper", "Nissan", "Van", 2200000),
+            new Car("Ranger", "Ford", "Wildtrak", 9200000),
+            new Car("Hilux", "Toyota", "Revo", 8500000),
+            new Car("Shehzore", "Isuzu", "Pickup", 3200000),
+            new Car("Ravi", "Ravi", "Pickup", 1800000),
+            new Car("Land Cruiser", "Toyota", "V8", 25000000),
+            new Car("Patrol", "Nissan", "Super Safari", 15000000),
+            new Car("Pajero", "Mitsubishi", "Sport", 8800000),
+            new Car("Outlander", "Mitsubishi", "2.4L", 7500000),
+            new Car("X-Trail", "Nissan", "Hybrid", 6200000),
+            new Car("Juke", "Nissan", "15RX", 4800000),
+            new Car("Note", "Nissan", "X", 2400000),
+            new Car("March", "Nissan", "AK13", 2000000),
+            new Car("Lancer", "Mitsubishi", "GLX", 3500000),
+            new Car("Galant", "Mitsubishi", "Super Exceed", 4200000),
+            new Car("Celerio", "Suzuki", "VXR", 2100000),
+            new Car("Baleno", "Suzuki", "GLX", 3200000),
+            new Car("Vitara", "Suzuki", "GL Plus", 4800000),
+            new Car("S-Cross", "Suzuki", "GLX", 5200000),
+            new Car("Grand Vitara", "Suzuki", "2.4L", 7800000),
+            new Car("Insight", "Honda", "Hybrid", 4500000),
+            new Car("Stream", "Honda", "RSZ", 3800000),
+            new Car("Freed", "Honda", "Hybrid", 4200000),
+            new Car("Stepwgn", "Honda", "Spada", 5500000),
+            new Car("Pilot", "Honda", "Touring", 12500000)
+        ];
 
-        // Object 3
-        var book3 = {
-            title: "A Tale of Two Cities",
-            author: "Charles Dickens",
-            genre: "Historical Novel",
-            year: 1859,
-            pages: 341,
-            rating: 4.1,
-            language: "English",
-            storyline: "Love and sacrifice during the French Revolution amid contrasting cities."
-        }
-
-        // Object 4
-        var book4 = {
-            title: "The Stranger",
-            author: "Albert Camus",
-            genre: "Existential Fiction",
-            year: 1942,
-            pages: 123,
-            rating: 4.0,
-            language: "French",
-            storyline: "An indifferent man commits a senseless murder and faces existential absurdity."
-        }
-
-        // Object 5
-        var book5 = {
-            title: "Dracula",
-            author: "Bram Stoker",
-            genre: "Gothic Horror",
-            year: 1897,
-            pages: 418,
-            rating: 4.3,
-            language: "English",
-            storyline: "A vampire from Transylvania stalks Victorian England, hunted by those aware of his dark curse."
-        }
-
-        console.log("=== BOOK COLLECTION ===");
-        console.log(`Book 1: ${book1.title} by ${book1.author} (${book1.year}) - Rating: ${book1.rating}/5`);
-        console.log(`Storyline: ${book1.storyline}`);
-        console.log(`Book 2: ${book2.title} by ${book2.author} - Pages: ${book2.pages} - Language: ${book2.language}`);
-        console.log(`Book 3: ${book3.title} - Genre: ${book3.genre} - Year: ${book3.year}`);
-        console.log(`Book 4: ${book4.title} by ${book4.author} - ${book4.storyline}`);
-        console.log(`Book 5: ${book5.title} - ${book5.pages} pages - Rating: ${book5.rating}/5`);
-
-        // Movie Objects
-        // Object 6
-        var movie1 = {
-            title: "Inception",
-            director: "Christopher Nolan",
-            year: 2010,
-            genres: ["Sci-Fi", "Action", "Thriller"],
-            rating: 8.8,
-            duration: "148 minutes",
-            boxOffice: "$836.8M"
-        }
-
-        // Object 7
-        var movie2 = {
-            title: "Insidious",
-            director: "James Wan",
-            year: 2010,
-            genres: ["Horror", "Supernatural", "Thriller"],
-            rating: 6.8,
-            duration: "103 minutes",
-            boxOffice: "$97M"
-        }
-
-        // Object 8
-        var movie3 = {
-            title: "The Conjuring",
-            director: "James Wan",
-            year: 2013,
-            genres: ["Horror", "Supernatural", "Mystery"],
-            rating: 7.5,
-            duration: "112 minutes",
-            boxOffice: "$319.5M"
-        }
-
-        // Object 9
-        var movie4 = {
-            title: "Ouija",
-            director: "Stiles White",
-            year: 2014,
-            genres: ["Horror", "Thriller"],
-            rating: 4.5,
-            duration: "89 minutes",
-            boxOffice: "$103.6M"
-        }
-
-        // Object 10
-        var movie5 = {
-            title: "The Boy",
-            director: "William Brent Bell",
-            year: 2016,
-            genres: ["Horror", "Mystery"],
-            rating: 6.0,
-            duration: "97 minutes",
-            boxOffice: "$64.2M"
-        }
-
-        console.log("\n=== MOVIE COLLECTION ===");
-        console.log(`Movie 1: ${movie1.title} - Director: ${movie1.director} - Genres: ${movie1.genres.join(", ")}`);
-        console.log(`Movie 2: ${movie2.title} - Rating: ${movie2.rating}/10 - Duration: ${movie2.duration}`);
-        console.log(`Movie 3: ${movie3.title} (${movie3.year}) - Box Office: ${movie3.boxOffice}`);
-        console.log(`Movie 4: ${movie4.title} - ${movie4.genres[0]} - Rating: ${movie4.rating}/10`);
-        console.log(`Movie 5: ${movie5.title} by ${movie5.director} - ${movie5.duration}`);
-
-        // Recipe Objects
-        // Object 11
-        var recipe1 = {
-            name: "Classic Pasta Marinara",
-            ingredients: ["pasta", "tomatoes", "garlic", "basil", "olive oil", "parmesan cheese"],
-            cookTime: "25 minutes",
-            servings: 4,
-            difficulty: "Easy",
-            vegetarian: true,
-            countryOfOrigin: "Italy"
-        }
-
-        // Object 12
-        var recipe2 = {
-            name: "Chicken Biryani",
-            ingredients: ["basmati rice", "chicken", "yogurt", "biryani spices", "onions", "saffron"],
-            cookTime: "90 minutes",
-            servings: 6,
-            difficulty: "Medium",
-            vegetarian: false,
-            countryOfOrigin: "India"
-        }
-
-        // Object 13
-        var recipe3 = {
-            name: "Margherita Pizza",
-            ingredients: ["pizza dough", "tomato sauce", "mozzarella", "fresh basil", "olive oil"],
-            cookTime: "35 minutes",
-            servings: 2,
-            difficulty: "Medium",
-            vegetarian: true,
-            countryOfOrigin: "Italy"
-        }
-
-        // Object 14
-        var recipe4 = {
-            name: "Homemade Mac and Cheese",
-            ingredients: ["macaroni", "cheddar cheese", "milk", "butter", "flour", "breadcrumbs"],
-            cookTime: "40 minutes",
-            servings: 4,
-            difficulty: "Easy",
-            vegetarian: true,
-            countryOfOrigin: "United States"
-        }
-
-        // Object 15
-        var recipe5 = {
-            name: "Vegetable Chow Mein",
-            ingredients: ["egg noodles", "soy sauce", "mixed vegetables", "garlic", "ginger", "sesame oil"],
-            cookTime: "20 minutes",
-            servings: 3,
-            difficulty: "Easy",
-            vegetarian: true,
-            countryOfOrigin: "China"
-        }
-
-        console.log("\n=== RECIPE COLLECTION ===");
-        console.log(`Recipe 1: ${recipe1.name} from ${recipe1.countryOfOrigin} - Cook Time: ${recipe1.cookTime}`);
-        console.log(`Ingredients: ${recipe1.ingredients.join(", ")}`);
-        console.log(`Recipe 2: ${recipe2.name} - Servings: ${recipe2.servings} - Difficulty: ${recipe2.difficulty}`);
-        console.log(`Recipe 3: ${recipe3.name} - Vegetarian: ${recipe3.vegetarian ? "Yes" : "No"}`);
-        console.log(`Recipe 4: ${recipe4.name} - ${recipe4.cookTime} - ${recipe4.countryOfOrigin}`);
-        console.log(`Recipe 5: ${recipe5.name} - ${recipe5.ingredients.length} ingredients - ${recipe5.servings} servings`);
-
-        // Country Objects
-        // Object 16
-        var country1 = {
-            name: "Pakistan",
-            capital: "Islamabad",
-            population: 230000000,
-            nationalLanguage: "Urdu",
-            currency: "Pakistani Rupee",
-            continent: "Asia",
-            area: "881,913 km²"
-        }
-
-        // Object 17
-        var country2 = {
-            name: "Japan",
-            capital: "Tokyo",
-            population: 125000000,
-            nationalLanguage: "Japanese",
-            currency: "Japanese Yen",
-            continent: "Asia",
-            area: "377,975 km²"
-        }
-
-        // Object 18
-        var country3 = {
-            name: "Germany",
-            capital: "Berlin",
-            population: 83000000,
-            nationalLanguage: "German",
-            currency: "Euro",
-            continent: "Europe",
-            area: "357,022 km²"
-        }
-
-        // Object 19
-        var country4 = {
-            name: "Brazil",
-            capital: "Brasília",
-            population: 215000000,
-            nationalLanguage: "Portuguese",
-            currency: "Brazilian Real",
-            continent: "South America",
-            area: "8,515,767 km²"
-        }
-
-        // Object 20
-        var country5 = {
-            name: "Turkey",
-            capital: "Ankara",
-            population: 85000000,
-            nationalLanguage: "Turkish",
-            currency: "Turkish Lira",
-            continent: "Asia/Europe",
-            area: "783,562 km²"
-        }
-
-        console.log("\n=== COUNTRY COLLECTION ===");
-        console.log(`Country 1: ${country1.name} - Capital: ${country1.capital} - Population: ${country1.population.toLocaleString()}`);
-        console.log(`Country 2: ${country2.name} - Language: ${country2.nationalLanguage} - Currency: ${country2.currency}`);
-        console.log(`Country 3: ${country3.name} - Continent: ${country3.continent} - Area: ${country3.area}`);
-        console.log(`Country 4: ${country4.name} - ${country4.capital} - ${country4.population.toLocaleString()} people`);
-        console.log(`Country 5: ${country5.name} - ${country5.nationalLanguage} speaking - ${country5.area}`);
+        console.log(carDetails);
 
 
-        // objects of users
-        // Object 21
-        var user1 = {
-            username: "maham719",
-            fullName: "Maham Khan",
-            email: "zohameer96@gmail.com",
-            isActive: true,
-            roles: ["admin", "editor"],
-            joinDate: "2023-01-15",
-            lastLogin: "2024-01-20"
-        }
-
-        // Object 22
-        var user2 = {
-            username: "erum812",
-            fullName: "Erum Ahmed",
-            email: "erumkhan31@gmail.com",
-            isActive: true,
-            roles: ["user"],
-            joinDate: "2023-03-10",
-            lastLogin: "2024-01-19"
-        }
-
-        // Object 23
-        var user3 = {
-            username: "zubi_jawad",
-            fullName: "Zubi Jawad",
-            email: "zubijawad56@gmail.com",
-            isActive: false,
-            roles: ["editor", "user"],
-            joinDate: "2022-11-05",
-            lastLogin: "2023-12-15"
-        }
-
-        // Object 24
-        var user4 = {
-            username: "ayesha_k",
-            fullName: "Ayesha Khan",
-            email: "ayesha.khan@example.com",
-            isActive: true,
-            roles: ["admin", "editor"],
-            joinDate: "2023-06-20",
-            lastLogin: "2024-01-21"
-        }
-
-        // Object 25
-        var user5 = {
-            username: "bilal_ahmed",
-            fullName: "Bilal Ahmed",
-            email: "bilal.ahmed@example.com",
-            isActive: false,
-            roles: ["viewer"],
-            joinDate: "2023-08-12",
-            lastLogin: "2023-11-30"
-        }
-
-        console.log("\n=== USER COLLECTION ===");
-        console.log(`User 1: ${user1.fullName} (@${user1.username}) - Status: ${user1.isActive ? "Active" : "Inactive"}`);
-        console.log(`Roles: ${user1.roles.join(", ")} - Last Login: ${user1.lastLogin}`);
-        console.log(`User 2: ${user2.fullName} - Email: ${user2.email} - Joined: ${user2.joinDate}`);
-        console.log(`User 3: ${user3.username} - Active: ${user3.isActive} - Roles: ${user3.roles.join(", ")}`);
-        console.log(`User 4: ${user4.email} - ${user4.roles.length} roles - Last seen: ${user4.lastLogin}`);
-        console.log(`User 5: ${user5.fullName} - Status: ${user5.isActive ? "Online" : "Offline"}`);
-
-        // Product Objects
-        // Object 26
-        var product1 = {
-            id: 101,
-            name: "Dell Inspiron 15 Laptop",
-            brand: "Dell",
-            category: "Electronics",
-            price: 120000,
-            currency: "PKR",
-            inStock: true,
-            quantity: 15,
-            rating: 4.3,
-            warranty: "2 years"
-        }
-
-        // Object 27
-        var product2 = {
-            id: 102,
-            name: "Samsung Galaxy A54",
-            brand: "Samsung",
-            category: "Mobile Phones",
-            price: 85000,
-            currency: "PKR",
-            inStock: true,
-            quantity: 25,
-            rating: 4.1,
-            warranty: "1 year"
-        }
-
-        // Object 28
-        var product3 = {
-            id: 103,
-            name: "Apple Watch Ultra",
-            brand: "Apple",
-            category: "Wearables",
-            price: 224999,
-            currency: "PKR",
-            inStock: false,
-            quantity: 0,
-            rating: 4.7,
-            warranty: "1 year"
-        }
-
-        // Object 29
-        var product4 = {
-            id: 104,
-            name: "Realme 14 5G",
-            brand: "Realme",
-            category: "Mobile Phones",
-            price: 65000,
-            currency: "PKR",
-            inStock: true,
-            quantity: 12,
-            rating: 4.0,
-            warranty: "1 year"
-        }
-
-        // Object 30
-        var product5 = {
-            id: 105,
-            name: "Dell Latitude 5470 Core i5",
-            brand: "Dell",
-            category: "Refurbished Laptops",
-            generation: "6th Gen",
-            price: 45000,
-            currency: "PKR",
-            inStock: true,
-            quantity: 8,
-            rating: 3.8,
-            warranty: "6 months"
-        }
-
-        console.log("\n=== PRODUCT COLLECTION ===");
-        console.log(`Product 1: ${product1.name} - ${product1.brand} - Price: ${product1.price} ${product1.currency}`);
-        console.log(`Stock: ${product1.inStock ? `${product1.quantity} units available` : "Out of stock"} - Rating: ${product1.rating}/5`);
-        console.log(`Product 2: ${product2.name} - Category: ${product2.category} - Warranty: ${product2.warranty}`);
-        console.log(`Product 3: ${product3.name} - ${product3.inStock ? "Available" : "Out of Stock"} - ${product3.price} ${product3.currency}`);
-        console.log(`Product 4: ${product4.name} - ${product4.brand} - ${product4.quantity} in stock`);
-        console.log(`Product 5: ${product5.name} (${product5.generation}) - ${product5.warranty} warranty - Rating: ${product5.rating}/5`);
-
-
-
-        // objects of students 
-        // Object 31
-        var student1 = {
-            name: "maham",
-            rollNumber: 375482,
-            grades: { html: 95, javascript: 98 },
-            hobbies: ["reading", "coding"]
-        }
-
-        // Object 32
-        var student2 = {
-            name: "dua",
-            rollNumber: 12345,
-            grades: { html: 90, javascript: 90 },
-            hobbies: ["coding", "writing"]
-        }
-
-        // Object 33
-        var student3 = {
-            name: "nida",
-            rollNumber: 34566,
-            grades: { html: 70, javascript: 90 },
-            hobbies: ["coding", "bike riding"]
-        }
-
-        // Object 34
-        var student4 = {
-            name: "fizza",
-            rollNumber: 59392,
-            grades: { html: 70, javascript: 85 },
-            hobbies: ["coding", "shopping"]
-        }
-
-        // Object 35
-        var student5 = {
-            name: "madiha",
-            rollNumber: 943943,
-            grades: { html: 70, javascript: 80 },
-            hobbies: ["coding", "exploring new places and opportunities"]
-        }
-
-        // CONSOLE OUTPUT FOR STUDENTS
-        console.log("=== STUDENTS ===");
-        console.log(`Student1: ${student1.name}, Roll: ${student1.rollNumber}, HTML: ${student1.grades.html}, JS: ${student1.grades.javascript}`);
-        console.log(`Student2: ${student2.name}, Roll: ${student2.rollNumber}, Hobbies: ${student2.hobbies.join(", ")}`);
-        console.log(`Student3: ${student3.name}, Roll: ${student3.rollNumber}, Average Grade: ${(student3.grades.html + student3.grades.javascript) / 2}`);
-        console.log(`Student4: ${student4.name}, Roll: ${student4.rollNumber}, Total Subjects: ${Object.keys(student4.grades).length}`);
-        console.log(`Student5: ${student5.name}, Roll: ${student5.rollNumber}, Favorite Hobby: ${student5.hobbies[1]}`);
-
-        // objects of pets 
-        // Object 36
-        var pet1 = {
-            name: "sweety",
-            type: "Cat",
-            age: 6,
-            coat: "double",
-            fur: "white",
-            isPlayful: true,
-            isShy: true,
-            isAggressive: false,
-            isFriendly: true
-        }
-
-        // Object 37
-        var pet2 = {
-            name: "rusty",
-            type: "Cat",
-            age: 7,
-            coat: "single",
-            fur: "calico",
-            isPlayful: true,
-            isShy: true,
-            isAggressive: false,
-            isFriendly: true
-        }
-
-        // Object 38
-        var pet3 = {
-            name: "luna",
-            type: "Cat",
-            age: 1,
-            coat: "single",
-            fur: "van",
-            isPlayful: true,
-            isShy: true,
-            isAggressive: false,
-            isFriendly: false
-        }
-
-        // Object 39
-        var pet4 = {
-            name: "danny",
-            type: "Cat",
-            age: 4,
-            coat: "short haired",
-            fur: "orange tabby",
-            isPlayful: true,
-            isShy: true,
-            isAggressive: false,
-            isFriendly: true
-        }
-
-        // Object 40
-        var pet5 = {
-            name: "pepper",
-            type: "Cat",
-            age: 1,
-            coat: "short haired",
-            fur: "brown tabby",
-            isPlayful: true,
-            isShy: true,
-            isAggressive: false,
-            isFriendly: true
-        }
-        // CONSOLE OUTPUT FOR PETS
-        console.log("\n=== PETS ===");
-        console.log(`Pet1: ${pet1.name} (${pet1.type}), Age: ${pet1.age}, Fur: ${pet1.fur}, Friendly: ${pet1.isFriendly}`);
-        console.log(`Pet2: ${pet2.name} (${pet2.type}), Age: ${pet2.age}, Coat: ${pet2.coat}, Playful: ${pet2.isPlayful}`);
-        console.log(`Pet3: ${pet3.name} (${pet3.type}), Age: ${pet3.age}, Fur: ${pet3.fur}, Friendly: ${pet3.isFriendly}`);
-        console.log(`Pet4: ${pet4.name} (${pet4.type}), Age: ${pet4.age}, Fur: ${pet4.fur}, Aggressive: ${pet4.isAggressive}`);
-        console.log(`Pet5: ${pet5.name} (${pet5.type}), Age: ${pet5.age}, Coat: ${pet5.coat}, Shy: ${pet5.isShy}`);
-
-
-        // objects of games 
-        // Object 41
-        var game1 = {
-            title: "King of Fighters",
-            platform: "Arcade",
-            players: 2,
-            genre: "Fighting"
-        }
-
-        // Object 42
-        var game2 = {
-            title: "Call of Duty: Warzone",
-            platform: "PC, PlayStation, Xbox",
-            players: "Multiplayer",
-            genre: "Battle Royale"
-        }
-
-        // Object 43
-        var game3 = {
-            title: "Minecraft",
-            platform: "PC, Console, Mobile",
-            players: "Single & Multiplayer",
-            genre: "Sandbox / Survival"
-        }
-
-        // Object 44
-        var game4 = {
-            title: "FIFA 24",
-            platform: "PC, PlayStation, Xbox, Nintendo Switch",
-            players: "Single & Multiplayer",
-            genre: "Sports"
-        }
-
-        // Object 45
-        var game5 = {
-            title: "Fortnite",
-            platform: "PC, Console, Mobile",
-            players: "Multiplayer",
-            genre: "Battle Royale, Action"
-        }
-
-        // CONSOLE OUTPUT FOR GAMES
-        console.log("\n=== GAMES ===");
-        console.log(`Game1: ${game1.title}, Platform: ${game1.platform}, Players: ${game1.players}, Genre: ${game1.genre}`);
-        console.log(`Game2: ${game2.title}, Platform: ${game2.platform}, Genre: ${game2.genre}`);
-        console.log(`Game3: ${game3.title}, Players: ${game3.players}, Genre: ${game3.genre}`);
-        console.log(`Game4: ${game4.title}, Platform: ${game4.platform}, Players: ${game4.players}`);
-        console.log(`Game5: ${game5.title}, Genre: ${game5.genre}, Platform: ${game5.platform}`);
-
-
-        // objects of alarms 
-        // Object 46
-        var alarm1 = {
-            time: "07:00 AM",
-            days: ["Mon", "Tue", "Wed"],
-            sound: "classic.mp3",
-            isEnabled: true
-        }
-
-        // Object 47
-        var alarm2 = {
-            time: "08:30 AM",
-            days: ["Saturday", "Sunday"],
-            sound: "Nature",
-            isEnabled: false
-        }
-
-        // Object 48
-        var alarm3 = {
-            time: "06:15 AM",
-            days: ["Monday", "Wednesday", "Friday"],
-            sound: "Classic Bell",
-            isEnabled: true
-        }
-
-        // Object 49
-        var alarm4 = {
-            time: "09:00 PM",
-            days: ["Daily"],
-            sound: "Chimes",
-            isEnabled: true
-        }
-
-        // Object 50
-        var alarm5 = {
-            time: "05:45 AM",
-            days: ["Tuesday", "Thursday"],
-            sound: "Vibrate Only",
-            isEnabled: false
-        }
-
-        // CONSOLE OUTPUT FOR ALARMS
-        console.log("\n=== ALARMS ===");
-        console.log(`Alarm1: ${alarm1.time}, Days: ${alarm1.days.join(", ")}, Enabled: ${alarm1.isEnabled}`);
-        console.log(`Alarm2: ${alarm2.time}, Sound: ${alarm2.sound}, Days: ${alarm2.days.join(", ")}, Enabled: ${alarm2.isEnabled}`);
-        console.log(`Alarm3: ${alarm3.time}, Sound: ${alarm3.sound}, Days: ${alarm3.days.join(", ")}`);
-        console.log(`Alarm4: ${alarm4.time}, Days: ${alarm4.days.join(", ")}, Enabled: ${alarm4.isEnabled}`);
-        console.log(`Alarm5: ${alarm5.time}, Sound: ${alarm5.sound}, Enabled: ${alarm5.isEnabled}`);
 
     </script>
 </body>
